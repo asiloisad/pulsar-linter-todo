@@ -23,7 +23,8 @@ Both scan modes restrict matches to comment regions only, consistent with the bu
 Commands available in `atom-workspace`:
 
 - `linter-todo:toggle-state`: toggle config of linter state,
-- `linter-todo:lint-project`: scan entire project for TODO keywords.
+- `linter-todo:lint-projects`: scan entire project for TODO keywords.
+- `linter-todo:lint-selected`: scan selected tree-view files or folders for TODO keywords.
 
 ## Settings
 

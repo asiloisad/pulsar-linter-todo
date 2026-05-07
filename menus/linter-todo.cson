@@ -6,9 +6,16 @@
         label: 'Linter Todo'
         submenu: [
           { label: 'Toggle State', command: 'linter-todo:toggle-state' }
-          { label: 'Lint Project', command: 'linter-todo:lint-project' }
+          { label: 'Lint Projects', command: 'linter-todo:lint-projects' }
+          { label: 'Lint Selected', command: 'linter-todo:lint-selected' }
         ]
       }
     ]
   }
 ]
+
+'context-menu':
+  '.tree-view .selected':
+    [
+      { label: 'TODO: Lint Selected', command: 'linter-todo:lint-selected' }
+    ]
