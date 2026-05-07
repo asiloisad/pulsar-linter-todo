@@ -13,9 +13,3 @@
     ]
   }
 ]
-
-'context-menu':
-  '.tree-view .selected':
-    [
-      { label: 'TODO: Lint Selected', command: 'linter-todo:lint-selected' }
-    ]

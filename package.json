@@ -17,6 +17,16 @@
     "atom": ">=1.100.0 <2.0.0"
   },
   "main": "./lib/main",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "activationCommands": {
+    "atom-workspace": [
+      "linter-todo:toggle-state",
+      "linter-todo:lint-projects",
+      "linter-todo:lint-selected"
+    ]
+  },
   "consumedServices": {
     "linter-indie": {
       "versions": {
@@ -26,6 +36,11 @@
     "atom-ide-busy-signal": {
       "versions": {
         "0.1.0": "consumeBusySignal"
+      }
+    },
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
       }
     }
   },
