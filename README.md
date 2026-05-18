@@ -2,6 +2,8 @@
 
 Scans files for TODO-style keywords and reports them as info-level linter messages. Uses the same default keywords as the built-in `language-todo` package.
 
+Supports both regular source files and Jupyter notebooks (`.ipynb`). In notebook mode, each code cell is scanned individually and messages are mapped to the correct cell via [jupyter-next](https://github.com/asiloisad/pulsar-jupyter-next).
+
 ## Installation
 
 To install `linter-todo` search for [linter-todo](https://web.pulsar-edit.dev/packages/linter-todo) in the Install pane of the Pulsar settings or run `ppm install linter-todo`. Alternatively, you can run `ppm install asiloisad/pulsar-linter-todo` to install a package directly from the GitHub repository.
